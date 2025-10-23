@@ -111,4 +111,6 @@ source $HOME/.aliases
 # EDITOR
 EDITOR=nvim
 
+# ZOXIDE
+eval "$(zoxide init zsh)"
 
