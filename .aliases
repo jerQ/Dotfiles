@@ -11,8 +11,9 @@ sc () { egrep -v '^(#|[[:space:]]#)' -; }
 
 # Disable laptop screen and use only external display
 alias fixscreens='xrandr --output HDMI-A-0 --auto --output eDP --off'
-# File system
-alias l='eza -lh --group-directories-first --icons=auto'
+#
+# EZA
+alias l='eza -l --icons=auto'
 alias ls='eza -lh --group-directories-first --icons=auto'
 alias lsa='ls -a'
 alias lt='eza --tree --level=2 --long --icons --git'
@@ -49,3 +50,7 @@ alias g='git'
 alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gcad='git commit -a --amend'
+
+# CAPS2ESC
+alias caps2esc='setxkbmap -option caps:escape'
+alias caps2ctrl='setxkbmap -option ctrl:nocaps'
