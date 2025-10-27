@@ -114,3 +114,9 @@ EDITOR=nvim
 # ZOXIDE
 eval "$(zoxide init zsh)"
 
+# Cargo environment
+. "$HOME/.cargo/env"
+
+
+# SSH Agent
+. "$HOME/bin/start-ssh-agent.sh"
