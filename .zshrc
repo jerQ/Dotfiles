@@ -105,6 +105,10 @@ source $ZSH/oh-my-zsh.sh
 #
 #
 # CUSTOM
+#
+
+# PATH
+PATH=$PATH:$HOME/bin
 # Aliases
 source $HOME/.aliases
 
@@ -116,7 +120,6 @@ eval "$(zoxide init zsh)"
 
 # Cargo environment
 . "$HOME/.cargo/env"
-
 
 # SSH Agent
 . "$HOME/bin/start-ssh-agent.sh"
