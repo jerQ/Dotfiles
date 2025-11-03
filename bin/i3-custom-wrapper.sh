@@ -23,3 +23,5 @@ setxkbmap -option caps:escape
 # RUN i3
 exec /usr/bin/i3 "$@"
 
+# Fix touchpad tap
+xinput set-prop ELAN1301:00 04F3:3128 Touchpad libinput Tapping Enabled 1
