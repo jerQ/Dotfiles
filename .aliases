@@ -13,9 +13,10 @@ sc () { egrep -v '^(#|[[:space:]]#)' -; }
 alias fixscreens='xrandr --output HDMI-A-0 --auto --output eDP --off'
 #
 # EZA
+alias ls='/bin/ls'
 alias l='eza -l --icons=auto'
-alias ls='eza -lh --group-directories-first --icons=auto'
-alias lsa='ls -a'
+alias ll='eza -l --group-directories-first --icons=auto'
+alias la='ls -a'
 alias lt='eza --tree --level=2 --long --icons --git'
 alias lta='lt -a'
 alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
